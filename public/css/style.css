@@ -4,7 +4,13 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
-    margin: 0;
+
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:960px;
 }
 
 a {
@@ -43,9 +49,9 @@ a {
 }
 .header {
     overflow-wrap: break-word;
-    padding-top: 40px;
+    padding-top: 80px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     font-size: 30px;
     size: 40px;
 
@@ -54,7 +60,7 @@ a {
 .index-container {
     overflow: hidden;
     margin:auto;
-    width: 40%;
+    width: 100%;
 }
 .index-description{
     text-align: center;
@@ -65,13 +71,21 @@ a {
 }
 .index-host-btn{
     float: left;
-
+    margin-right: 20px;
 }
 .index-join-btn{
     float: right;
-
+    margin-right: 20px;
 }
 
+.flex-parent {
+    display: flex;
+  }
+  
+  .jc-center {
+    justify-content: center;
+  }
+  
 .footer{
     font-size: 10px;
     text-align: center;

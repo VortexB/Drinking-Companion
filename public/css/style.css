@@ -1,0 +1,102 @@
+body {
+	background-color: #423d3d;
+    color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+.btn {
+    background-color:#4CAF50;
+    color: #fff;
+    border-style: none;
+	cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.bigbtn {
+    border: 10px #4CAF50 solid;
+    background-color:#4CAF50;
+    color: #fff;
+    border-style:double;
+	cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.info{
+    display: block;
+    padding-top: 20px;
+    margin: auto;
+    width: 30%;
+    
+}
+.header {
+    overflow-wrap: break-word;
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 30px;
+    size: 40px;
+
+}
+/*Index Page */
+.index-container {
+    overflow: hidden;
+    margin:auto;
+    width: 40%;
+}
+.index-description{
+    text-align: center;
+    padding-bottom: 40px;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+.index-host-btn{
+    float: left;
+
+}
+.index-join-btn{
+    float: right;
+
+}
+
+.footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 100px;;
+}
+.footer a{
+    color: lightblue;
+}
+
+@media(max-width:600px){
+    .index-host-btn{
+        width: 100%;
+        float: none;
+    
+    }
+    .index-join-btn{
+        width: 100%;
+        float: none;
+    
+    }
+}
+/*Host Page */
+#gen-btn{
+
+}
+#room-code-gen{
+    
+}

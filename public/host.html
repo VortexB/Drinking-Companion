@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Drink With Me</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Drink With Me</h1>
+    </header>
+    <div  class="info">
+        
+    </div>
+    <form onsubmit="loadLobby()" class="info" id="submit">
+        <p>Room Code:</p>
+        <input id="room-code-gen">000000/>
+        <button type="button" class="btn" id="gen-btn">Generate</button><br>
+        <input
+                    type="text"
+                    name="player-name"
+                    id="player-name"
+                    placeholder="Enter your name..."
+                    required
+                />
+        
+        <button type="submit" class="btn">Enter</button>
+    </form>
+    <footer class="footer">
+        <p>Made by <a href="https://twitter.com/_VortexB" target="_blank">@_VortexB</a> and Doraro for UOttaHack2021</p>
+    </footer> 
+    <script src="js/host.js"></script>
+</body>
+</html>

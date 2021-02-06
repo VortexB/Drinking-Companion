@@ -10,11 +10,12 @@ function generateCode(){
 }
 
 codeText.innerHTML=generateCode();
-genButton.onclick = function(){codeText.innerHTML=generateCode();}
+genButton.onclick = c=>codeText.innerHTML=generateCode();
 
 function loadLobby(){
-    const url = ("http://localhost:3000/" + `lobby.html?room-code=${codeText.innerText}&name=${document.getElementById("player-name").innerText}`);
+    const url = ("http://localhost:3000/" + `lobby.html?room-code=${codeText.innerText}&name=${document.getElementById("player-name").value}`);
     console.log(url);
     const form=document.getElementById("submit");
+    location.href=url;
 
 }

@@ -12,12 +12,11 @@
         <h1>Drink With Me</h1>
     </header>
     <div  class="info">
-        
-    </div>
-    <form onsubmit="loadLobby()" class="info" id="submit">
         <p>Room Code:</p>
-        <input id="room-code-gen">000000/>
+        <p id="room-code-gen">000000</p>
         <button type="button" class="btn" id="gen-btn">Generate</button><br>
+    </div>
+    <form onsubmit="loadLobby();return false" class="info" id="submit">
         <input
                     type="text"
                     name="player-name"

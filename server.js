@@ -13,8 +13,12 @@ io.on("connection", socket=>{
     socket.emit("message","Welcome to Drink With Me");//connecting client
     socket.broadcast.emit();//all useser but connect
     socket.on("disconnect",()=>{
-        io.emit("message","")
+        io.emit("message","User left.")
     })
+
+    socket.on("drinkType",shot=>{
+        io.emit('drinkType',shot);
+    });
 
 });
 

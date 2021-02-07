@@ -50,10 +50,12 @@ a {
 .header {
     overflow-wrap: break-word;
     padding-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin-bottom: 40px;
     font-size: 30px;
     size: 40px;
+    font-weight: bold;
 
 }
 /*Index Page */
@@ -61,6 +63,7 @@ a {
     overflow: hidden;
     margin:auto;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .index-description{
     text-align: center;
@@ -108,9 +111,18 @@ a {
     }
 }
 /*Host Page */
+
+.info{
+    text-align: center;
+
+}
+
 #gen-btn{
 
 }
 #room-code-gen{
     
+}
+#testv{
+    margin-top: 10px;
 }

@@ -120,3 +120,36 @@ a {
 #testv{
     margin-top: 10px;
 }
+
+.roomname{
+    display: inline;
+}
+
+#textbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shotbtn{
+    border: 10px #4CAF50 solid;
+    height: 30%;
+}
+#drink-drunk{
+    margin-top: -20.5px;
+}
+#drink-text{
+    float: left;
+    position: relative;
+    left: 45%;
+}
+#room-name{
+    float:left;
+
+}
+.fasfa-users{
+    float:left;
+}
+
+#users{
+    float:left;
+}

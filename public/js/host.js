@@ -13,7 +13,7 @@ codeText.innerHTML=generateCode();
 genButton.onclick = c=>codeText.innerHTML=generateCode();
 
 function loadLobby(){
-    const url = ("http://localhost:3000/" + `lobby.html?room-code=${codeText.innerText}&name=${document.getElementById("player-name").value}`);
+    const url = ("http://localhost:3000/" + `lobby.html?username=${document.getElementById("player-name").value}&room=${codeText.innerText}`);
     console.log(url);
     const form=document.getElementById("submit");
     location.href=url;

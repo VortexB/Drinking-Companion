@@ -28,12 +28,26 @@ io.on("connection", socket=>{
 
     socket.on("disconnect",()=>{
         const user =userLeave(socket.id);
-    })
+        if(user!=null){
+            io.to(user.room).emit('roomUsers',{
+                room:user.room,
+                users: getRoomUsers(user.room)
+            })
+        }
+    });
 
+    socket.on("DoneDrink",()=>{
+        user=getCurrentUser(socket.id);
+        if(user!=null){
+            io.to(user.room).emit("DoneDrink",user);
+        }
+    });
 
     socket.on("drinkType",shot=>{
         user=getCurrentUser(socket.id);
-        io.to(user.room).emit('drinkType',shot);
+        if(user!=null){
+            io.to(user.room).emit('drinkType',shot);
+        }
     });
 
 });

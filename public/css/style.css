@@ -125,31 +125,60 @@ a {
     display: inline;
 }
 
-#textbox {
+#banner {
     display: flex;
     justify-content: space-between;
+    background-color: #597A5A;
+    padding: 20px;
+    margin: 1px;
+    border-radius: 10px;
+
+}
+#text-field{
+    margin-left: 5px;
+    font-size: 30px;
+
 }
 
-#shotbtn{
-    border: 10px #4CAF50 solid;
-    height: 30%;
+#drinkbtn{
+    float: left;
 }
-#drink-drunk{
-    margin-top: -20.5px;
+#drunkbtn{
+    margin-left: auto;
+    float:right;
 }
 #drink-text{
-    float: left;
-    position: relative;
-    left: 45%;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    padding: 20px;
+}
+.border{
+    border: 1px black solid;
+    background-color: #597A5A;
+    border-radius: 20px;
+}
+#drink-count{
+    float: right;
 }
 #room-name{
-    float:left;
-
+    float:right;
+    padding-right: 10px; 
 }
-.fasfa-users{
+.user-list{
     float:left;
+    padding-left: 10px;  
 }
-
-#users{
-    float:left;
+.user-list ul{
+    padding: 0;
+    list-style: none;
+}
+.message{
+    font-size: 30px;
+    font-weight: bold;
+}
+.has-drink{
+    color: red;
+    font-weight: bold;
 }

@@ -9,16 +9,21 @@
     <title>Drink With Me</title>
 </head>
 <body>
-  <div id="textbox">
-    <button id="shotbtn" type="submit" class="bigbtn">Shot!</button>
-    <h1>Shots!<h1>
-    <button id="drink-drunk" type="submit" class="bigbtn">Drink</button>
-  </div>
-    <h2 id="room-name" class="roomname"></h2>
-
+  <div id="banner">
+    <button id="drinkbtn" type="submit" class="bigbtn">New Drink!</button>
+    <input type="text" id="text-field" placeholder="Drink name...">
+    
+    <button id="drunkbtn" type="submit" class="bigbtn">Done Drink!</button>
+    <div class="clr"></div>
+</div>
+<div class="user-list">
+    <h2><i class="fasfa-users"></i> Users</h2>
+    <ul id="users"></ul>
+</div>
+<h2 id="room-name" class="roomname"></h2>
+<div class="clr"></div>
+<h2 id="drink-count"></h2>
     <div id="drink-text"></div>
-          <h3><i class="fasfa-users"></i> Users</h3>
-          <ul id="users"></ul>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
       integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="

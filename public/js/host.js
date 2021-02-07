@@ -9,8 +9,8 @@ function generateCode(){
     return code;
 }
 
-codeText.innerHTML=generateCode();
-genButton.onclick = c=>codeText.innerHTML=generateCode();
+codeText.innerHTML="Room code: " + generateCode();
+genButton.onclick = c=> codeText.innerHTML="Room code: "+ generateCode();
 
 function loadLobby(){
     const url = ("http://localhost:3000/" + `lobby.html?room-code=${codeText.innerText}&name=${document.getElementById("player-name").value}`);
